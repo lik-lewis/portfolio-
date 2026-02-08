@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lewis Marias - Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --fg: #e9f6ff;
+      --muted: #a6b8d6;
+      --card: #1a1648;
+      --accent: #4dd9c6;   /* teal */
+      --accent2: #7c5cff;  /* purple */
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; background: var(--bg); color: var(--fg); }
+
+    /* Header / hero */
+    header {
+      padding: 50px 16px;
+      text-align: center;
+      background: linear-gradient(135deg, #2a0a3a 0%, #0f2a3a 60%, #0b1020 100%);
+      color: pink;
+    }
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { margin: 6px 0 0; color: var(--muted);  }
+	nav{ display: flex; justify-content: flex-end; gap: 20px;}
+    .cta {
+      display: inline-block;
+      margin-top: 44px;
+      padding: 22px 28px;
+      border-radius: 15px;
+      background: var(--accent);
+      color:#e8f3ff;
+      font-weight: bold;
+      text-decoration: none;
+	  
+    }
+
+    /* Main content */
+    main { padding: 20px; max-width: 1000px; margin: 0 auto; }
+    section { margin: 28px 0; }
+    h2 { font-size: 1.6rem; margin: 0 0 8px; }
+
+    .card { background: rgba(26,22,72,.92); padding: 14px; border-radius: 10px; margin: 10px 0; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+
+    /* Project item */
+    .proj { border-radius: 8px; padding: 12px; background: rgba(26,22,72,.92); }
+
+    /* Contact icons */
+    .icon-row { display: flex; gap: 14px; justify-content: center; align-items: center; margin: 12px 0 0; }
+    .icon { width: 46px; height: 46px; display: inline-flex; align-items: center; justify-content: center;
+            border-radius: 8px; background: rgba(255,255,255,.08); color: #fff; text-decoration: none; }
+    .icon:hover { transform: translateY(-2px); background: rgba(255,255,255,.16); }
+    .icon svg { width: 22px; height: 22px; fill: currentColor; }
+
+    footer { text-align: center; color: var(--muted); padding: 16px; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lewis Marias</h1>
+    <nav aria-label="Section links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About -->
+    <section id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>I am a Computer Science student with a strong interest in technology and problem-solving. I am currently studying Computer Science at Machakos University, where I am building skills in programming, web development,cyber security, data science and computer systems. I enjoy learning new technologies, working on practical projects, and improving my technical abilities.</p</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <ul>
+        <li>B.S. in Computer Science — Machakos University, Machakos, Kenya</li>
+        <li>Relevant coursework: Software development, Computer Security, Operating Systems, Networking, Data science</li>
+      </ul>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <strong>Programming</strong>
+          <p>Python, C, C++, Java, JavaScript, SQL</p>
+        </div>
+        <div class="card">
+          <strong>Security Domains</strong>
+          <p>Web App Security, Network Security,Threat Modeling</p>
+        </div>
+        <div class="card">
+          <strong>Database Management</strong>
+          <p> Using MySql, SQLite, Microsoft SQL server</p>
+        </div>
+        <div class="card">
+          <strong>Practices</strong>
+          <p>Linux/Windows, UI/UX, Secure SDLC</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+
+      <div class="proj card">
+        <strong>Smartlearn</strong>
+        <p>Tech: JavaScript, React</p>
+        <p>Description: A learning companion app with study tracking and progress dashboards, used MySQL, HTML, CSS and PHP.</p>
+      </div>
+
+    </section>
+
+    <!-- Contact with icons -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title" style="text-align:center;">Contact</h2>
+      <p style="text-align:center;">Email: lewislikam8@gmail.com • Location: Machakos, Kenya</p>
+      <div class="icon-row" aria-label="Social links">
+        <!-- Instagram -->
+        <a class="icon" href="https://instagram.com/yourprofile" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zM7 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7z"/>
+            <circle cx="17" cy="7" r="1.5"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </a>
+        <!-- WhatsApp -->
+        <a class="icon" href="https://wa.me/254794849413" aria-label="WhatsApp" title="WhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M17.5 3h-11A5.5 5.5 0 0 0 1 8.5v7A5.5 5.5 0 0 0 6.5 21h7a5.5 5.5 0 0 0 5.5-5.5v-7A5.5 5.5 0 0 0 17.5 3zm3 9.5a3.5 3.5 0 0 1-3.5 3.5H15v3H9V7h3.5A3.5 3.5 0 0 1 16 10.5V14h4.5z"/>
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a class="icon" href="https://github.com/lik-lewis" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.58 2 12.25C2 16.73 4.94 20.42 9.23 21.64c.85.15 1.16-.37 1.16-.82 0-.41-.01-1.5-.02-2.95-3.77.82-4.56-1.43-4.56-1.43-.73-1.86-.28-3.45-.28-3.45 0-.99.37-1.9 1-2.58-.12-.28-.45-1.38.1-2.87 0 0 .84-.28 2.75 1.05A9.25 9.25 0 0 1 12 6.8c.85.01 1.7.11 2.5.32 1.9-1.33 2.75-1.05 2.75-1.05.55 1.49.21 2.6.1 2.87.64.72 1.02 1.63 1.02 2.75 0 3.94-2.34 4.8-4.57 5.07.36.31.69.92.69 1.87 0 1.35-.01 2.44-.01 2.78 0 .27.18.61.69.48A10.01 10.01 0 0 0 22 12.25C22 6.58 17.52 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© Lewis Marias</footer>
+</body>
+</html>
